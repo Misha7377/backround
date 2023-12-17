@@ -1,0 +1,438 @@
+@import url('reset.css');
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 20px 0;
+    background: burlywood;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.list li {
+    position: relative;
+}
+
+.list li:hover ul {
+    display: block;
+}
+
+.list li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    background: aquamarine;
+    display: block;
+}
+
+.list li a:hover {
+    background: grey;
+}
+
+.works {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.works li a {
+    background: thistle;
+}
+.layauts{
+    position: relative;
+}
+.layauts li {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+.layauts li:hover a {
+    display: block;
+}
+
+
+/* Block */
+
+.table-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+   }
+.table {
+    width: 500px;
+    height: 500px;
+}
+
+    table, th, td {
+    border-collapse: collapse;
+    border: 3px solid rgb(164, 75, 75);
+    }
+
+
+
+
+.block-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.first {
+    font-size: 0;
+}
+
+.first>div {
+    width: 400px;
+    height: 400px;
+    background-color: rgb(47, 255, 0);
+    display: inline-block;
+    font-size: 15px;
+    outline: 1px solid black;
+}
+
+.second {
+    display: flex;
+}
+
+.tu,
+.ut {
+    display: flex;
+    flex-direction: column;
+}
+
+.tu>div {
+    width: 800px;
+    height: 200px;
+    background-color: rgb(0, 42, 255);
+    outline: 1px solid black;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.ut>div {
+    width: 400px;
+    height: 133.33px;
+    background-color: yellow;
+    outline: 1px solid black;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    font-size: 0;
+}
+
+.block-1 {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    outline: 1px solid black;
+    background: yellow;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.block-2 {
+    display: inline-block;
+    width: 800px;
+    height: 400px;
+    outline: 1px solid black;
+    background: yellow;
+    vertical-align: top;
+}
+
+.block-3 {
+    width: 800px;
+    display: inline-block;
+    height: 200px;
+    outline: 1px solid black;
+    background: blue;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.block-4 {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    outline: 1px solid #000000;
+    background: green;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.block-5 {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background: purple;
+}
+
+.block-6 {
+    height: 100px;
+    outline: 1px solid black;
+    background: red;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+.block-7 {
+    height: 100px;
+    outline: 1px solid black;
+    background: aquamarine;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+/* float */
+
+.float-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.float-first>div {
+    outline: 1px solid black;
+    background-color: bisque;
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+.float-tu {
+    width: 800px;
+    background-color: rgb(0, 42, 255);
+    float: left;
+}
+
+.float-tu>div {
+    height: 200px;
+    outline: 1px solid black;
+}
+
+.float-ut {
+    width: 400px;
+    background-color: yellow;
+    float: right;
+}
+
+.float-ut>div {
+    height: 133.33px;
+    outline: 1px solid black;
+}
+
+.float-third {
+    background-color: antiquewhite;
+}
+
+.float-block-1 {
+    width: 400px;
+    height: 400px;
+    outline: 1px solid black;
+    background: yellow;
+    float: left;
+}
+
+.float-block-2 {
+    float: left;
+    width: 800px;
+}
+
+.float-block-3 {
+
+    height: 200px;
+    outline: 1px solid black;
+    background: blue;
+}
+
+.float-block-4 {
+    width: 400px;
+    height: 200px;
+    outline: 1px solid #000000;
+    background: green;
+    float: left;
+}
+
+.float-block-5 {
+    width: 400px;
+    background: purple;
+    float: left;
+}
+
+.float-block-6 {
+    height: 100px;
+    outline: 1px solid black;
+    background: red;
+}
+
+.float-block-7 {
+    height: 100px;
+    outline: 1px solid black;
+    background: aquamarine;
+}
+
+/* Flex */
+
+.flex-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.flex-first {
+    display: flex;
+}
+
+.flex-first > div {
+    outline: 1px solid black;
+    background-color: bisque;
+    width: 400px;
+    height: 400px;
+}
+
+.flex-second {
+    display: flex;
+}
+
+.flex-tu {
+    width: 800px;
+    background-color: rgb(0, 42, 255);
+}
+
+.flex-tu > div {
+    height: 200px;
+    outline: 1px solid black;
+}
+
+.flex-ut {
+    width: 400px;
+    background-color: yellow;
+    flex-direction: column;
+}
+
+.flex-ut > div {
+    height: 133.33px;
+    outline: 1px solid black;
+}
+
+.flex-third {
+    display: flex;
+}
+
+.flex-block-1 {
+    width: 400px;
+    height: 400px;
+    outline: 1px solid black;
+    background: yellow;
+}
+
+.flex-block-2 {
+    width: 800px;
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-block-3 {
+    width: 800px;
+    height: 200px;
+    outline: 1px solid black;
+    background: blue;
+}
+
+.flex-block-4 {
+    width: 400px;
+    height: 200px;
+    outline: 1px solid #000000;
+    background: green;
+}
+
+.flex-block-5 {
+    width: 400px;
+    display: flex;
+  flex-direction: column;
+}
+
+.flex-block-6 {
+    height: 100px;
+    outline: 1px solid black;
+    background: red;
+}
+
+.flex-block-7 {
+    height: 100px;
+    outline: 1px solid black;
+    background: aquamarine;
+}
+
+/* Galley */
+.gallery-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.feature {
+    padding: 120px 0;
+    background: #D8D8D6;
+    }
+    .feature-title {
+    margin-bottom: 50px;
+    font-size: 32px;
+    text-align: center;
+    }
+    .feature-cards {
+    display: flex;
+    gap: 30px;
+    }
+    .feature-card {
+        flex: 1 1 30%;
+        border-radius: 6px;
+        background: #81A36B;
+        padding: 15px 15px 40px;
+        position: relative;
+    }
+    .feature-card-1 {
+        margin-bottom: 23px;
+    }
+    .feature-card img{
+        height: 402px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+    .feature-card-title{
+        font-size: 18px;
+        text-align: center;
+    }
+    .feature-card p {
+        background-color: #7fff9f63;
+        width: 100%;
+        height: 200px;
+        font-size: 20px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        overflow: auto;
+        display: none;
+    }
+    .feature-card:hover p {
+        display: block;
+    }
