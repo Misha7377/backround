@@ -21,7 +21,7 @@
     position: relative;
 }
 
-.list li:hover ul {
+.list li:hover > ul {
     display: block;
 }
 
@@ -47,15 +47,13 @@
 .works li a {
     background: thistle;
 }
-.layauts{
-    position: relative;
-}
-.layauts li {
+.layauts {
     position: absolute;
-    top: 100%;
-    left: 0;
+    top: 0;
+    left: 100%;
     display: none;
 }
+
 .layauts li:hover a {
     display: block;
 }
