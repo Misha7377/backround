@@ -38,7 +38,7 @@
 }
 
 .list li a:hover {
-    background: grey;
+    background-color: gray;
 }
 
 .works {
@@ -62,13 +62,25 @@
 .layauts li:hover a {
     display: block;
 }
-.background {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background: #fff url(../images/home-svgrepo-com.svg) no-repeat;
+.list li a.background {
+    padding-left: 30px;
+    background: aquamarine url(../images/home-svgrepo-com.svg) 5px 50% no-repeat;
 }
-
+.list li a.background-1 {
+    padding-left: 30px;
+    background: aquamarine url(../images/gallery-svgrepo-com.svg) 5px 50% no-repeat; 
+}
+.list li a.background-2 {
+    padding-right: 30px;
+    background: aquamarine url(../images/arrow-sm-down-svgrepo-com.svg) 100% 50% no-repeat; 
+}
+.list > li  a.background-3 {
+    padding-right: 30px;
+    background: aquamarine url(../images/arrow-sm-right-svgrepo-com.svg) 100% 50% no-repeat;
+}
+.list li a:hover {
+    background-color: gray;
+}
 
 /* Block */
 
