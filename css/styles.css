@@ -11,6 +11,7 @@
 }
 
 .list {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -32,22 +33,26 @@
     background: aquamarine;
     display: block;
 }
+.list > li + li {
+    font-family: 'Crimson Pro', serif;
+}
 
 .list li a:hover {
     background: grey;
 }
 
 .works {
+    font-family: 'Architects Daughter', cursive;
     position: absolute;
     top: 100%;
     left: 0;
     display: none;
 }
-
 .works li a {
     background: thistle;
 }
 .layauts {
+    font-family: 'Courgette', cursive;
     position: absolute;
     top: 0;
     left: 100%;
