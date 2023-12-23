@@ -57,17 +57,13 @@
 .works li a {
     background: thistle;
 }
-.background-3 {
-    position: relative;
-    z-index: 1;
-}
+
 .layauts {
     font-family: 'Courgette', cursive;
     position: absolute;
     top: 0;
     left: -1000%;
     transition: all .5s linear;
-    z-index: -1;
     /* display: none; */
     /* opacity: 0; */
 }
