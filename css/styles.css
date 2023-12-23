@@ -41,6 +41,9 @@
 .list li a:hover {
     background-color: gray;
 }
+.list > li + li + li a {
+    padding: 10px 40px 10px 10px;
+}
 
 .works {
     font-family: 'Architects Daughter', cursive;
@@ -54,19 +57,22 @@
 .works li a {
     background: thistle;
 }
+.background-3 {
+    position: relative;
+    z-index: 1;
+}
 .layauts {
     font-family: 'Courgette', cursive;
     position: absolute;
     top: 0;
-    /* top: -1000%; */
     left: -1000%;
     transition: all .5s linear;
-    display: none;
+    z-index: -1;
+    /* display: none; */
     /* opacity: 0; */
 }
 
-.layauts li:hover a {
-    /* top: 100%; */
+.works li:hover ul.layauts {
     /* display: block; */
     /* opacity: 1; */
     left: 100%;
@@ -75,11 +81,6 @@
     padding-left: 30px;
     background: aquamarine url(../images/home-svgrepo-com.svg) 5px 50% no-repeat;
 } */
-a.background {
-    color: red;
-	position: relative;
-	transition: color .3s linear;
-}
 .icon {
 	width: 20px;
 	height: 20px;
@@ -88,7 +89,6 @@ a.background {
 	top: 50%;
 	margin-top: -10px;
 	left: 10px;
-	transition: fill .3s linear;
 }
 .icon-1 {
 	width: 20px;
@@ -97,8 +97,7 @@ a.background {
 	position: absolute;
 	top: 50%;
 	margin-top: -10px;
-	left: 100px;
-	transition: fill .3s linear;
+	right: 10px;
 }
 /* .list li a.background-1 {
     padding-left: 30px;
