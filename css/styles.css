@@ -7,7 +7,7 @@
 
 .header {
     padding: 20px 0;
-    background: burlywood;
+    background: rgb(61, 64, 135);
 }
 
 .list {
@@ -110,6 +110,67 @@
 .list li a:hover {
     background-color: gray;
 }
+
+/* SIDE-BAR */
+.sidebar {
+	width: 95px;
+	background: rgba(0, 0, 0, 0.158);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	transition: .2s linear;
+	overflow: hidden;
+}
+.sidebar:hover {
+	width: 300px;
+}
+.wrap {
+	padding-left: 95px;
+	transition: .2s linear;
+}
+.sidebar:hover + .wrap {
+	padding-left: 300px;
+}
+
+.sidebar-list {
+	padding-top: 67px;
+}
+
+.sidebar-link {
+	display: flex;
+	align-items: center;
+	padding: 14px 20px;
+	gap: 27px;
+	font-size: 22px;
+    text-decoration: none;
+    color: #000000;
+}
+.sidebar-link span {
+	border: 3px solid rgb(152, 153, 140);
+	display: inline-block;
+	padding: 2px;
+	transform: rotate(-45deg);
+	overflow: hidden;
+	flex-shrink: 0;
+}
+
+.sidebar-link svg {
+	width: 40px;
+	height: 40px;
+	fill: rgb(19, 53, 73);
+	transform: rotate(45deg);
+	transition: .2s linear;
+}
+.sidebar-link:hover {
+	background: rgba(4, 69, 54, 0.438);
+}
+
+.sidebar-link:hover svg {
+	transform: rotate(45deg) scale(1.4);
+}
+
+
 /* Block */
 
 .table-container {
